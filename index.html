@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contact Form Validation with PHP</title>
+    <style>
+  body {
+    font-family: Arial, sans-serif;
+    border-style: solid;
+    width: 40%;
+    background-color: cadetblue;
+    text-align: center;
+  }
+  
+  .form-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #151111;
+    border-radius: 5px;
+    background-color:indianred;
+  }
+  .row {
+    display: flex;
+    margin-bottom: 10px;
+    
+  }
+  .col {
+    text-align: center;
+
+  }
+    </style>
+</head>
+<body>
+    <div class="form_container"> 
+
+<h1 class="heading">CONTACT US</h1>
+
+<form action="process_form.php" method="post">
+    <div class="row">
+        <div class="col">
+    <label for="fullName">Full Name :</label>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp;
+    <input type="text" id="fullName" name="fullName" required><br><br>
+    </div>
+    </div>
+    <div class="row">
+        <div class="col">
+    <label for="phoneNumber">Phone Number :</label> &nbsp &nbsp;
+    <input type="tel" id="phoneNumber" name="phoneNumber" required><br><br>
+    </div>
+    </div>
+    <div class="row">
+        <div class="col">
+    <label for="email">Email :</label>    &nbsp   &nbsp   &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp &nbsp;
+    <input type="email" id="email" name="email" required><br><br>
+    </div>
+    </div>
+    <div class="row">
+        <div class="col">
+    <label for="subject">Subject :</label>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp;
+    <input type="text" id="subject" name="subject" required><br><br>
+    </div>
+    </div>
+    <div class="row">
+        <div class="col">
+    <label for="message">Message :</label>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp;
+    <textarea id="message" name="message" rows="3" cols="30" required></textarea><br><br>
+    </div>
+    </div>
+    <input type="submit" value="Submit">
+</form>
+    </div>
+
+</body>
+</html>
